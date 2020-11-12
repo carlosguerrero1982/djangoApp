@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>{% block title %}The Great Django Blog{% endblock %}</title>
+
+         {% include 'navbar.html'%}
+
+    </head>
+
+<body>
+
+{% block body %} 
+
+<h1>BASE</h1>
+
+{% endblock %} 
+
+</body>
+
+{% block footer %}
+This is footer
+{% endblock %}
+
+</html>

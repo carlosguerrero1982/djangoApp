@@ -1,0 +1,19 @@
+
+
+{% block content %}
+    <h1>Blog List</h1>
+
+    {% if blog_list %}
+    <ul>
+
+      {% for blog in blog_list %}
+      <li>
+        <a href="{{ blog.name }}">{{ blog.tagline }}</a>{{ blog.pub_date }}
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no books in the library.</p>
+    {% endif %}       
+{% endblock %}

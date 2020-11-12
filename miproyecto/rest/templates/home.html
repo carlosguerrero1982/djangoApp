@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %} 
+
+<h1>HOME</h1>
+
+{{list}}
+
+<ul>
+    {% for lang in list %}
+        <li>{{ lang }}</li>
+    {% endfor %}
+    </ul>
+
+{% if mynumb == 60  %}    
+
+<h1>this is true</h1>
+
+{% else %}
+
+<h1>this is false</h1>
+
+{% endif %} 
+
+{% endblock %} 
